@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Offered | Online Tutor</title>
+    <style>
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #6ea5a1da;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+}
+
+.course-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.enroll-button {
+    margin-top: 20px;
+}
+
+.enroll-button a {
+    background-color: #009688;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.enroll-button a:hover {
+    background-color: #08aa99;
+}
+    </style>
+
+    <!--java scrip-->
+    <script>
+        function enroll() {
+            window.location.href = "enrollmentform.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Courses Offered</h1>
+    </header>
+
+    <div class="courses-container">
+        <div class="course-card">
+            <h2>Mathematics</h2>
+            <p class="description">This course covers fundamental concepts in algebra, geometry, and calculus.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand basic algebraic concepts</li>
+                <li>Apply geometric principles to solve problems</li>
+                <li>Introduction to calculus and its applications</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>Basic knowledge of arithmetic is recommended.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Science</h2>
+            <p class="description">Explore the wonders of physics, chemistry, and biology in this comprehensive course.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand fundamental scientific principles</li>
+                <li>Conduct experiments and analyze results</li>
+                <li>Apply scientific concepts to real-world situations</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>English Literature</h2>
+            <p class="description">Dive into classic and contemporary literature, exploring themes and analysis.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Analyze literary works from various genres</li>
+                <li>Discuss themes and character development</li>
+                <li>Improve critical thinking and writing skills</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>A passion for reading and writing is beneficial.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Computer Science</h2>
+            <p class="description">Learn the fundamentals of programming, algorithms, and data structures.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand basic programming concepts</li>
+                <li>Learn problem-solving techniques</li>
+                <li>Implement algorithms and data structures</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prior programming knowledge is required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>History</h2>
+            <p class="description">Explore the major events and figures that have shaped our world.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand key historical events</li>
+                <li>Analyze the impact of significant figures</li>
+                <li>Discuss historical themes and narratives</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Graphic Design</h2>
+            <p class="description">Learn the principles of graphic design and create stunning visuals.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand design principles</li>
+                <li>Create digital graphics using software</li>
+                <li>Develop a portfolio of design work</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>Basic computer skills are recommended.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Spanish Language</h2>
+            <p class="description">This course will help you learn to speak, read, and write in Spanish.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Build a foundational vocabulary</li>
+                <li>Practice conversational skills</li>
+                <li>Understand basic grammar rules</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Digital Marketing</h2>
+            <p class="description">Learn how to effectively market products and services online.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand digital marketing strategies</li>
+                <li>Analyze online consumer behavior</li>
+                <li>Create effective marketing campaigns</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Web Development</h2>
+            <p class="description">Learn to build websites using HTML, CSS, and JavaScript.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand web design principles</li>
+                <li>Build responsive websites</li>
+                <li>Learn JavaScript for interactivity</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prior experience required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Music Theory</h2>
+            <p class="description">Explore the fundamentals of music and how to read and write music.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand musical notation</li>
+                <li>Learn about scales and chords</li>
+                <li>Compose simple melodies</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Psychology</h2>
+            <p class="description">Understand human behavior and mental processes.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Learn key psychological theories</li>
+                <li>Understand research methods in psychology</li>
+                <li>Apply psychological concepts to everyday life</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Business Management</h2>
+            <p class="description">Learn the principles of effective management in business settings.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand management theories</li>
+                <li>Learn about organizational behavior</li>
+                <li>Apply management strategies in real-world situations</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Photography</h2>
+            <p class="description">Learn the art of photography and how to take stunning photos.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand camera settings and techniques</li>
+                <li>Learn composition and lighting principles</li>
+                <li>Develop a personal photography style</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>A camera is recommended but not required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Cooking Basics</h2>
+            <p class="description">Learn fundamental cooking techniques and recipes.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand basic cooking methods</li>
+                <li>Learn how to prepare healthy meals</li>
+                <li>Explore various cuisines and recipes</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Creative Writing</h2>
+            <p class="description">Explore different writing styles and develop your creative voice.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Learn the fundamentals of storytelling</li>
+                <li>Experiment with various genres</li>
+                <li>Improve writing skills through feedback</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>A passion for writing is encouraged.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Statistics</h2>
+            <p class="description">Understand the principles of statistics and data analysis.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Learn how to collect and analyze data</li>
+                <li>Understand basic statistical concepts</li>
+                <li>Apply statistics to real-world scenarios</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>Basic mathematics skills are recommended.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Artificial Intelligence</h2>
+            <p class="description">Discover the concepts and applications of AI in today’s world.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand the basics of machine learning</li>
+                <li>Explore AI applications across industries</li>
+                <li>Learn about ethical considerations in AI</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>Basic programming knowledge is beneficial.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Public Speaking</h2>
+            <p class="description">Develop your public speaking skills and gain confidence.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Learn techniques for effective communication</li>
+                <li>Practice speech delivery in front of an audience</li>
+                <li>Receive constructive feedback on presentations</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prior experience required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Environmental Science</h2>
+            <p class="description">Study the relationship between humans and the environment.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand ecological principles</li>
+                <li>Discuss environmental issues and solutions</li>
+                <li>Analyze case studies of environmental impact</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Financial Literacy</h2>
+            <p class="description">Learn how to manage personal finances and investments.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand budgeting and saving techniques</li>
+                <li>Learn about credit and debt management</li>
+                <li>Explore investment options and risks</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Health and Nutrition</h2>
+            <p class="description">Explore the fundamentals of healthy eating and nutrition.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand the importance of nutrition</li>
+                <li>Learn to create balanced meal plans</li>
+                <li>Explore dietary needs for different lifestyles</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Social Media Management</h2>
+            <p class="description">Learn to effectively manage social media platforms for businesses.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand social media strategies</li>
+                <li>Analyze metrics and engagement</li>
+                <li>Create content that resonates with audiences</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Data Science</h2>
+            <p class="description">Dive into data analysis, visualization, and machine learning.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand data collection and cleaning</li>
+                <li>Explore data visualization techniques</li>
+                <li>Learn machine learning algorithms</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>Basic programming skills are beneficial.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+
+        <div class="course-card">
+            <h2>Ethics in Technology</h2>
+            <p class="description">Explore ethical issues surrounding technology and its impact on society.</p>
+            <h3>Course Objectives:</h3>
+            <ul>
+                <li>Understand ethical frameworks</li>
+                <li>Discuss case studies in technology ethics</li>
+                <li>Explore the implications of AI and data privacy</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <p>No prerequisites required.</p>
+            <p class="enroll-button" onclick="enroll()"><a >Enroll Now</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

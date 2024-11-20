@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(homeimg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 33px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 2px;
+    width: 170px;
+    cursor: pointer;
+}
+.logoname{
+    width: 130px;
+    cursor: pointer;
+    color: white;
+    padding-left: 62px ;
+    margin-top: -37px;
+}
+.navbar ul input{
+    margin: 0 70px;
+    font-size: 16px;
+    border: 0px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.content button{
+    width: 300px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.content ul li button a{
+    color: white;
+}
+span{
+    background: #009688;
+    height: 0;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+.content button:hover span{
+    height: 100%;
+}
+.content button:hover span{
+    border: none;
+}

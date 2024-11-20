@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-tutor</title>
+    <style>
+        /*about section*/
+/* Tutor About Section Styling */
+#about-tutor {
+    background-color: #fffffff0;
+    padding: 60px 0;
+    text-align: center;
+    transition-delay: 2s;
+  }
+  
+  /* Section title */
+  #about-tutor h2 {
+    font-size: 2.5em;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    color: #000000;
+  }
+  
+  /* Flexbox layout for tutor content */
+  .about-tutor-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Image styling */
+  .tutor-image img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(28, 74, 61, 0.173);
+  }
+  /* Tutor info section styling */
+  .tutor-info {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .tutor-info h3 {
+    font-size: 1.8em;
+    color: #000000;
+  }
+  
+  .tutor-info p {
+    font-size: 1.4em;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .tutor-info h4 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-top: 20px;
+  }
+  
+  /* Call to action button */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #08aa99;
+  }
+  
+  @media (max-width: 768px) {
+    /* Make the section responsive for mobile */
+    .about-tutor-content {
+      flex-direction: column;
+    }
+  
+    .tutor-info {
+      text-align: center;
+    }
+  
+    .tutor-image img {
+      margin-bottom: 20px;
+    }
+  }
+  
+    </style>
+</head>
+<body>
+    <section id="about-tutor">
+        <div class="container">
+          <h2>About Tutor</h2>
+          <div class="about-tutor-content">
+            <div class="tutor-image">
+              <img src="tutorimg.jpg" alt="Tutor Photo">
+            </div>
+            <div class="tutor-info">
+              <h3>Hello! I’m [Tutor Name]</h3>
+              <p>
+                I have over 10 years of experience teaching mathematics and science to students from middle school to college. I hold a degree in [Your Degree] from [Your University], and I specialize in personalized learning plans that help students excel in exams and build confidence in their academic abilities.
+              </p>
+              <h4>Teaching Philosophy</h4>
+              <p>
+                My goal is to make learning enjoyable and accessible. I believe in interactive learning where students actively engage with the material. Every student is different, and I tailor my lessons to fit each student's unique needs and learning style.
+              </p>
+              <a href="#contact-page" class="btn">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
